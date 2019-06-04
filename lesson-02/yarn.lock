@@ -162,6 +162,36 @@ event-stream@~0.5:
   dependencies:
     optimist "0.2"
 
+good-console@5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/good-console/-/good-console-5.1.0.tgz#a1cc38eb5b091de49f81c3ceead6a84349797553"
+  integrity sha1-ocw461sJHeSfgcPO6taoQ0l5dVM=
+  dependencies:
+    good-squeeze "2.x.x"
+    hoek "2.x.x"
+    json-stringify-safe "5.0.x"
+    moment "2.8.x"
+    through2 "0.6.x"
+
+good-squeeze@2.x.x:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/good-squeeze/-/good-squeeze-2.1.0.tgz#99cee91d26d591698a899c28e9310bcf3c6ae28a"
+  integrity sha1-mc7pHSbVkWmKiZwo6TELzzxq4oo=
+  dependencies:
+    hoek "2.x.x"
+    json-stringify-safe "5.0.x"
+
+good@6.4.0:
+  version "6.4.0"
+  resolved "https://registry.yarnpkg.com/good/-/good-6.4.0.tgz#9813658fc8fa1574a2899ee5a238aaf06d149cf2"
+  integrity sha1-mBNlj8j6FXSiiZ7lojiq8G0UnPI=
+  dependencies:
+    hoek "2.x.x"
+    items "1.x.x"
+    joi "6.x.x"
+    traverse "0.6.6"
+    wreck "6.x.x"
+
 got@^3.2.0:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/got/-/got-3.3.1.tgz#e5d0ed4af55fc3eef4d56007769d98192bcb2eca"
@@ -271,6 +301,11 @@ is-stream@^1.0.0:
   resolved "https://registry.yarnpkg.com/is-stream/-/is-stream-1.1.0.tgz#12d4a3dd4e68e0b79ceb8dbc84173ae80d91ca44"
   integrity sha1-EtSj3U5o4Lec6428hBc66A2RykQ=
 
+isarray@0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/isarray/-/isarray-0.0.1.tgz#8a18acfca9a8f4177e09abfc6038939b05d1eedf"
+  integrity sha1-ihis/Kmo9Bd+Cav8YDiTmwXR7t8=
+
 isarray@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/isarray/-/isarray-1.0.0.tgz#bb935d48582cba168c06834957a54a3e07124f11"
@@ -303,6 +338,11 @@ js-yaml@^3.1.0:
   dependencies:
     argparse "^1.0.7"
     esprima "^4.0.0"
+
+json-stringify-safe@5.0.x:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
+  integrity sha1-Epai1Y/UXxmg9s4B1lcB4sc1tus=
 
 kilt@^1.1.x:
   version "1.1.1"
@@ -365,6 +405,11 @@ mkdirp@^0.5.0:
   integrity sha1-MAV0OOrGz3+MR2fzhkjWaX11yQM=
   dependencies:
     minimist "0.0.8"
+
+moment@2.8.x:
+  version "2.8.4"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.8.4.tgz#cc174aabb19223efff5699a9467805a2789838bf"
+  integrity sha1-zBdKq7GSI+//VpmpRngFoniYOL8=
 
 moment@2.x.x:
   version "2.24.0"
@@ -526,6 +571,16 @@ read-all-stream@^3.0.0:
     pinkie-promise "^2.0.0"
     readable-stream "^2.0.0"
 
+"readable-stream@>=1.0.33-1 <1.1.0-0":
+  version "1.0.34"
+  resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-1.0.34.tgz#125820e34bc842d2f2aaafafe4c2916ee32c157c"
+  integrity sha1-Elgg40vIQtLyqq+v5MKRbuMsFXw=
+  dependencies:
+    core-util-is "~1.0.0"
+    inherits "~2.0.1"
+    isarray "0.0.1"
+    string_decoder "~0.10.x"
+
 readable-stream@^2.0.0:
   version "2.3.6"
   resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-2.3.6.tgz#b11c27d88b8ff1fbe070643cf94b0c79ae1b0aaf"
@@ -604,6 +659,11 @@ string-length@^1.0.0:
   dependencies:
     strip-ansi "^3.0.0"
 
+string_decoder@~0.10.x:
+  version "0.10.31"
+  resolved "https://registry.yarnpkg.com/string_decoder/-/string_decoder-0.10.31.tgz#62e203bc41766c6c28c9fc84301dab1c5310fa94"
+  integrity sha1-YuIDvEF2bGwoyfyEMB2rHFMQ+pQ=
+
 string_decoder@~1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/string_decoder/-/string_decoder-1.1.1.tgz#9cf1611ba62685d7030ae9e4ba34149c3af03fc8"
@@ -640,6 +700,14 @@ supports-color@^2.0.0:
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-2.0.0.tgz#535d045ce6b6363fa40117084629995e9df324c7"
   integrity sha1-U10EXOa2Nj+kARcIRimZXp3zJMc=
 
+through2@0.6.x:
+  version "0.6.5"
+  resolved "https://registry.yarnpkg.com/through2/-/through2-0.6.5.tgz#41ab9c67b29d57209071410e1d7a7a968cd3ad48"
+  integrity sha1-QaucZ7KdVyCQcUEOHXp6lozTrUg=
+  dependencies:
+    readable-stream ">=1.0.33-1 <1.1.0-0"
+    xtend ">=4.0.0 <4.1.0-0"
+
 timed-out@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/timed-out/-/timed-out-2.0.0.tgz#f38b0ae81d3747d628001f41dafc652ace671c0a"
@@ -658,6 +726,11 @@ touch@~0.0.3:
   integrity sha1-/BpxA8vg7O5xPROE13Xi+eIcquI=
   dependencies:
     nopt "~1.0.10"
+
+traverse@0.6.6:
+  version "0.6.6"
+  resolved "https://registry.yarnpkg.com/traverse/-/traverse-0.6.6.tgz#cbdf560fd7b9af632502fed40f918c157ea97137"
+  integrity sha1-y99WD9e5r2MlAv7UD5GMFX6pcTc=
 
 update-notifier@^0.3.0:
   version "0.3.2"
@@ -717,3 +790,8 @@ xdg-basedir@^1.0.0:
   integrity sha1-FP+PY6T9vLBdW27qIrNvMDO58E4=
   dependencies:
     user-home "^1.0.0"
+
+"xtend@>=4.0.0 <4.1.0-0":
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/xtend/-/xtend-4.0.1.tgz#a5c6d532be656e23db820efb943a1f04998d63af"
+  integrity sha1-pcbVMr5lbiPbgg77lDofBJmNY68=
