@@ -12,10 +12,11 @@ server.register(require('inert'), () => {
 
   server.route({
     method: 'GET',
-    path: '/hapi.png',
-    handler: function (request, reply){
-      var path = Path.join(__dirname, 'public/hapi.png')
-      reply.file(path)
+    path: '/{param*}',
+    handler: {
+      directory: {
+        path: Path.join(__dirname, 'public')
+      }
     }
   })
 
