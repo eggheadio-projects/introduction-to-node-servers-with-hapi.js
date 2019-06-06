@@ -3,21 +3,22 @@
 // eslint-disable-next-line prettier/prettier
 'use strict'
 const Hapi = require('hapi')
-const Boom = require('boom')
+const Path = require('path')
 
 const server = new Hapi.Server()
 server.connection({ port: 8000 })
 
-server.route({
-  method: 'GET',
-  path: '/',
-  handler: function(request, reply){
-    reply('hello world')
-      .code(418)
-      .type('text/plain')
-      .header('hello', 'world')
-      .state('hello', 'world')
-  }
+server.register(require('inert'), () => {
+
+  server.route({
+    method: 'GET',
+    path: '/hapi.png',
+    handler: function (request, reply){
+      var path = Path.join(__dirname, 'public/hapi.png')
+      reply.file(path)
+    }
+  })
+
+  server.start(() => console.log(`Started at: ${server.info.uri}`))
 })
 
-server.start(() => {})
