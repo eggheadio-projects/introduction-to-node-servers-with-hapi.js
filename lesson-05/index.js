@@ -12,7 +12,11 @@ server.route({
   method: 'GET',
   path: '/',
   handler: function(request, reply){
-    reply(Boom.notFound())
+    reply('hello world')
+      .code(418)
+      .type('text/plain')
+      .header('hello', 'world')
+      .state('hello', 'world')
   }
 })
 
