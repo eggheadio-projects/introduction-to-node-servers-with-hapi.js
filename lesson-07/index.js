@@ -14,14 +14,15 @@ server.register(require('vision'), () => {
       hbs: require('handlebars')
     },
     relativeTo: __dirname,
+    layout: true,
     path: 'views'
   })
 
   server.route({
     method: 'GET',
-    path: '/',
+    path: '/{name?}',
     handler: function(request, reply){
-      reply.view('home')
+      reply.view('home', { name: request.params.name || 'World'})
     }
   })
 
