@@ -7,10 +7,17 @@ const server = new Hapi.Server()
 server.connection({ port: 8000 })
 
 server.route({
-  method: 'GET',
+  method: ['POST', 'PUT'],
   path: '/',
+  config: {
+    payload: {
+      output: 'data',
+      parse: false,
+      allow: 'application/json'
+    }
+  },
   handler: function(request, reply){
-    reply()
+    reply(request.payload)
   }
 })
 
