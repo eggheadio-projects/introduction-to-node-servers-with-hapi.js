@@ -14,6 +14,9 @@ server.route({
     validate: {
       params: Joi.object({
         id: Joi.number()
+      }),
+      query: Joi.object({
+        id: Joi.number(),
       })
     },
     handler: function (request, reply) {
