@@ -7,27 +7,8 @@ const server = new Hapi.Server()
 server.connection({ port: 8000 })
 
 server.ext('onRequest', (request, reply)=> {
-  console.log('onRequest')
-  reply.continue()
-})
-
-server.ext('onPostAuth', (request, reply) => {
-  console.log('onPostAuth')
-  reply.continue()
-})
-
-server.ext('onPreHandler', (request, reply) => {
-  console.log('onPreHandler')
-  reply.continue()
-})
-
-server.ext('onPostHandler', (request, reply) => {
-  console.log('onPostHandler')
-  reply.continue()
-})
-
-server.ext('onPreResponse', (request, reply) => {
-  console.log('onPreResponse')
+  request.setUrl('/')
+  request.setMethod('GET')
   reply.continue()
 })
 
