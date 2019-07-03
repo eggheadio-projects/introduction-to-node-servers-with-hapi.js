@@ -3,13 +3,19 @@
 // eslint-disable-next-line prettier/prettier
 'use strict'
 const Hapi = require('hapi')
+const Joi = require('joi')
 const server = new Hapi.Server()
 server.connection({ port: 8000 })
 
 server.route({
-  method: 'GET',
-  path: '/',
+  method: ['POST', 'PUT'],
+  path: '/user/{id?}',
   config: {
+    validate: {
+      params: Joi.object({
+        id: Joi.number()
+      })
+    },
     handler: function (request, reply) {
       reply({
         params: request.params,

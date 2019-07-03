@@ -300,6 +300,11 @@ hoek@2.x.x, hoek@^2.14.x:
   resolved "https://registry.yarnpkg.com/hoek/-/hoek-2.16.3.tgz#20bb7403d3cea398e91dc4710a8ff1b8274a25ed"
   integrity sha1-ILt0A9POo5jpHcRxCo/xuCdKJe0=
 
+hoek@3.x.x:
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/hoek/-/hoek-3.0.4.tgz#268adff66bb6695c69b4789a88b1e0847c3f3123"
+  integrity sha1-Jorf9mu2aVxptHiaiLHghHw/MSM=
+
 hoek@4.x.x:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/hoek/-/hoek-4.2.1.tgz#9634502aa12c445dd5a7c5734b572bb8738aacbb"
@@ -405,6 +410,16 @@ joi@6.x.x, joi@^6.8.1:
     isemail "1.x.x"
     moment "2.x.x"
     topo "1.x.x"
+
+joi@7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/joi/-/joi-7.0.0.tgz#7f0a5e56c0818aabd7a58366a791a3818c0b63df"
+  integrity sha1-fwpeVsCBiqvXpYNmp5GjgYwLY98=
+  dependencies:
+    hoek "3.x.x"
+    isemail "2.x.x"
+    moment "2.x.x"
+    topo "2.x.x"
 
 js-yaml@^3.1.0:
   version "3.13.1"
