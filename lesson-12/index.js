@@ -11,7 +11,14 @@ server.route({
   path: '/',
   config: {
     handler: function (request, reply) {
-      reply(`Cookies!`)
+      let hello = request.state.hello
+      reply(`Cookies! ${hello}`)
+        .state('hello', 'world', {
+          ttl: 60 * 60 * 1000,
+          isHttpOnly: true,
+          encoding: 'iron',
+          password: '123'
+        })
     }
   }
 })
