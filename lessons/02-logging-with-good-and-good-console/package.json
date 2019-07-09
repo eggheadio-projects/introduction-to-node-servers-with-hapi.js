@@ -1,0 +1,26 @@
+{
+  "name": "02-logging-with-good-and-good-console",
+  "version": "1.0.0",
+  "description": "up and running",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caydenakins/introduction-to-node-servers-with-hapijs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caydenakins/introduction-to-node-servers-with-hapijs/issues"
+  },
+  "homepage": "https://github.com/caydenakins/introduction-to-node-servers-with-hapijs#readme",
+  "dependencies": {
+    "@hapi/hapi": "^18.3.1",
+    "good": "^8.1.2",
+    "good-console": "^8.0.0",
+    "nodemon": "^1.18.10"
+  }
+}

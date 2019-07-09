@@ -1,0 +1,28 @@
+{
+  "name": "11-request-validation-with-joi",
+  "version": "1.0.0",
+  "description": "up and running",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "curl": "curl -d '{\"id\":\"123\",\"email\":\"mike@example.com\"}' -H \"Content-Type: application/json\" -X POST http://localhost:8000/user/123",
+    "post": "curl -X POST localhost:8000/user/123?id=123",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caydenakins/introduction-to-node-servers-with-hapijs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caydenakins/introduction-to-node-servers-with-hapijs/issues"
+  },
+  "homepage": "https://github.com/caydenakins/introduction-to-node-servers-with-hapijs#readme",
+  "dependencies": {
+    "@hapi/hapi": "^18.3.1",
+    "@hapi/joi": "^15.0.3",
+    "curl": "^0.1.4",
+    "nodemon": "^1.18.10"
+  }
+}
