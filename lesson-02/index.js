@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 'use strict'
 const Hapi = require('hapi')
 

@@ -1,6 +1,3 @@
-/* eslint-disable prettier/prettier */
-/* eslint-disable @typescript-eslint/no-var-requires */
-// eslint-disable-next-line prettier/prettier
 'use strict'
 const Hapi = require('hapi')
 const Boom = require('boom')
