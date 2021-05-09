@@ -22,7 +22,7 @@
     "@hapi/vision": "^5.5.2",
     "good": "^8.1.2",
     "good-console": "^8.0.0",
-    "handlebars": "^4.1.2",
+    "handlebars": "^4.7.7",
     "nodemon": "^1.18.10"
   }
 }
